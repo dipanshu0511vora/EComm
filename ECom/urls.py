@@ -24,6 +24,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('Accounts/', include('Accounts.urls')),
     path("admin/", admin.site.urls),
+    # path('send-welcome-email/', send_welcome_email, name='send_welcome_email'),
 ]
 
 if settings.DEBUG:
