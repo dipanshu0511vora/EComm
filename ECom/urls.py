@@ -22,8 +22,11 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
+    path('', include('Home.urls')),
+    path('product', include('products.urls')),
     path('Accounts/', include('Accounts.urls')),
     path("admin/", admin.site.urls),
+      
     # path('send-welcome-email/', send_welcome_email, name='send_welcome_email'),
 ]
 
